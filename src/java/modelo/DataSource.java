@@ -1,14 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package modelo;
 import java.sql.Connection;
 import java.sql.DriverManager;
 /**
  *
- * @author Administrador
+ * @author Hevert.Sousa
  */
 public class DataSource {
     Connection conn;
@@ -16,7 +11,7 @@ public class DataSource {
         String url,usuario,senha;
         usuario="root";
         senha="";
-        url="jdbc:mysql://localhost/projeto";
+        url="jdbc:mysql://localhost:8080/Projeto_carrinho";
         Class.forName("com.mysql.jdbc.Driver");
         conn = DriverManager.getConnection(url, usuario, senha);
     }
