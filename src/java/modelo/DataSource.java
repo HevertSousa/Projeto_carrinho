@@ -11,8 +11,8 @@ public class DataSource {
         String url,usuario,senha;
         usuario="root";
         senha="";
-        url="jdbc:mysql://localhost:8080/projeto";
-        Class.forName("com.mysql.jdbc.Driver");
+        url="jdbc:mysql://localhost/projetofinalpoo";
+        Class.forName("com.mysql.cj.jdbc.Driver");
         conn = DriverManager.getConnection(url, usuario, senha);
     }
     public void desconectar() throws Exception{
