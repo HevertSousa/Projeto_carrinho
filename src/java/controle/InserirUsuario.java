@@ -17,7 +17,7 @@ import modelo.UsuarioDAO;
 
 /**
  *
- * @author Administrador
+ * @author Hevert Sousa
  */
 public class InserirUsuario extends HttpServlet {
 
@@ -43,15 +43,16 @@ public class InserirUsuario extends HttpServlet {
             out.println("<body>");
             
             try {
+                int id_perfil = Integer.parseInt(request.getParameter("id_perfil"));
                 String nome = request.getParameter("nome");
                 String login = request.getParameter("login");
                 String senha = request.getParameter("senha");
-                int id_perfil = Integer.parseInt(request.getParameter("id_perfil"));
+                String situacao = request.getParameter("situacao");
                 Usuario u = new Usuario();
                 u.setNome(nome);
                 u.setLogin(login);
                 u.setSenha(senha);
-                u.setSituacao("Ok");
+                u.setSituacao(situacao);
                 Perfil p = new Perfil();
                 p.setId(id_perfil);
                 u.setPerfil(p);

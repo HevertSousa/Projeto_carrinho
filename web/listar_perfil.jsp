@@ -1,9 +1,3 @@
-<%-- 
-    Document   : listar_perfil
-    Created on : 22/08/2018, 14:24:20
-    Author     : Administrador
---%>
-
 <%@page import="modelo.PerfilDAO"%>
 <%@page import="modelo.Perfil"%>
 <%@page import="java.util.ArrayList"%>

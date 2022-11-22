@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Administrador
+ * @author Hevert Sousa
  */
 public class VendaDAO extends DataSource{
     public int inserir(Venda v) throws Exception{

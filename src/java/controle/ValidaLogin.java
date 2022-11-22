@@ -17,7 +17,7 @@
 
     /**
      *
-     * @author Administrador
+     * @author Hevert Sousa
      */
     public class ValidaLogin extends HttpServlet {
 

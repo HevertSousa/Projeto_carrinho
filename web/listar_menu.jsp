@@ -1,9 +1,3 @@
-<%-- 
-    Document   : listar_menu
-    Created on : 22/08/2018, 14:24:20
-    Author     : Administrador
---%>
-
 <%@page import="modelo.MenuDAO"%>
 <%@page import="modelo.Menu"%>
 <%@page import="java.util.ArrayList"%>

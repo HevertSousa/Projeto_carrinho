@@ -1,10 +1,3 @@
-<%-- 
-    Document   : form_catalogo_venda
-    Created on : 05/11/2018, 15:33:25
-    Author     : Administrador
---%>
-
-
 <%@page import="modelo.Usuario"%>
 <%@page import="modelo.ItemVenda"%>
 <%@page import="modelo.ProdutoDAO"%>

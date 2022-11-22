@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Administrador
+ * @author Hevert Sousa
  */
 public class PerfilDAO extends DataSource{
     public void inserir(Perfil p) throws Exception{
@@ -92,7 +92,7 @@ public class PerfilDAO extends DataSource{
     public ArrayList<Menu> menusPerfil(int id_perfil) throws Exception{
         this.conectar();
         ArrayList<Menu> lista = new ArrayList<Menu>();
-        String sql = "SELECT m.* FROM menu as m, perfil_menu as pm WHERE pm.id_menu=m.id AND pm.id_perfil=?";
+        String sql = "SELECT m.* FROM menu as m, menu_perfil as pm WHERE pm.id_menu=m.id AND pm.id_perfil=?";
         PreparedStatement pstm = conn.prepareStatement(sql);
         pstm.setInt(1, id_perfil);
         ResultSet rs = pstm.executeQuery();
@@ -110,7 +110,7 @@ public class PerfilDAO extends DataSource{
     public ArrayList<Menu> menusNaoPerfil(int id_perfil) throws Exception{
         this.conectar();
         ArrayList<Menu> lista = new ArrayList<Menu>();
-        String sql = "SELECT * FROM menu WHERE id NOT IN(SELECT id_menu FROM perfil_menu as pm WHERE pm.id_perfil=?)";
+        String sql = "SELECT * FROM menu WHERE id NOT IN(SELECT id_menu FROM menu_perfil as pm WHERE pm.id_perfil=?)";
         PreparedStatement pstm = conn.prepareStatement(sql);
         pstm.setInt(1, id_perfil);
         ResultSet rs = pstm.executeQuery();
@@ -127,7 +127,7 @@ public class PerfilDAO extends DataSource{
     }
     public void vincular(int id_perfil, int id_menu) throws Exception{
         this.conectar();
-        String sql = "INSERT INTO perfil_menu (id_perfil,id_menu) VALUES(?,?)";
+        String sql = "INSERT INTO menu_perfil (id_perfil,id_menu) VALUES(?,?)";
         PreparedStatement pstm = conn.prepareStatement(sql);
         pstm.setInt(1, id_perfil);
         pstm.setInt(2, id_menu);
@@ -136,7 +136,7 @@ public class PerfilDAO extends DataSource{
     }
     public void desvincular(int id_perfil, int id_menu) throws Exception{
         this.conectar();
-        String sql = "DELETE FROM perfil_menu WHERE id_perfil=? AND id_menu=?";
+        String sql = "DELETE FROM menu_perfil WHERE id_perfil=? AND id_menu=?";
         PreparedStatement pstm = conn.prepareStatement(sql);
         pstm.setInt(1, id_perfil);
         pstm.setInt(2, id_menu);

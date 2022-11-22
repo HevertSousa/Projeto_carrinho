@@ -16,7 +16,7 @@ import modelo.ProdutoDAO;
 
 /**
  *
- * @author Administrador
+ * @author Hevert Sousa
  */
 public class InserirProduto extends HttpServlet {
 

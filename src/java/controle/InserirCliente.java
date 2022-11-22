@@ -17,7 +17,7 @@ import modelo.ClienteDAO;
 
 /**
  *
- * @author Administrador
+ * @author Hevert Sousa
  */
 @WebServlet(name = "InserirCliente", urlPatterns = {"/InserirCliente"})
 public class InserirCliente extends HttpServlet {

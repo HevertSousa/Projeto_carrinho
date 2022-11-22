@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Administrador
+ * @author Hevert Sousa
  */
 public class ClienteDAO extends DataSource{
     public void inserir(Cliente c) throws Exception{

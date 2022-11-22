@@ -1,9 +1,3 @@
-<%-- 
-    Document   : form_inserir_perfil
-    Created on : 07/08/2018, 16:25:29
-    Author     : Administrador
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -15,9 +9,10 @@
         <%@include file="menu.jsp" %>
         <h1>Novo Perfil</h1>
         <form action="inserir_perfil.do" method="post">
-            Nome:<input type="text" name="nome" size="60" required/><br/>
-            Descrição:<input type="text" name="descricao" size="60" required/><br/>
+            Nome        <input type="text" name="nome" size="60" required/><br/>
+            Descrição   <input type="text" name="descricao" size="60" required/><br/>
             <input type="submit" value="Salvar"/>
+            <input type="submit" href="index.jsp", value="voltar">
         </form>
     </body>
 </html>

@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Administrador
+ * @author Hevert Sousa
  */
 public class ProdutoDAO extends DataSource{
     public void inserir(Produto p) throws Exception{

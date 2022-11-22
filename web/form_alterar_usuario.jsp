@@ -1,9 +1,3 @@
-<%-- 
-    Document   : form_inserir_perfil
-    Created on : 07/08/2018, 16:25:29
-    Author     : Administrador
---%>
-
 <%@page import="modelo.UsuarioDAO"%>
 <%@page import="modelo.Usuario"%>
 <%@page import="modelo.PerfilDAO"%>
@@ -12,7 +6,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <%
-    ArrayList<Perfil> perfis = new ArrayList<Perfil>();
+    ArrayList<Perfil> perfis = new ArrayList();
     Usuario u = new Usuario();
     try{
        int id = Integer.parseInt(request.getParameter("id"));

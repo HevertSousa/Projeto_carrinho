@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Administrador
+ * @author Hevert Sousa
  */
 public class UsuarioDAO extends DataSource{
     public void inserir(Usuario u) throws Exception{
@@ -36,7 +36,7 @@ public class UsuarioDAO extends DataSource{
     }
     public ArrayList<Usuario> listar() throws Exception{
         this.conectar();
-        ArrayList<Usuario> lista = new ArrayList<Usuario>();
+        ArrayList<Usuario> lista = new ArrayList<>();
         String sql = "SELECT * FROM usuario";
         PreparedStatement pstm = conn.prepareStatement(sql);
         ResultSet rs = pstm.executeQuery();

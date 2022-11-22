@@ -10,7 +10,7 @@ import java.util.Date;
 
 /**
  *
- * @author Administrador
+ * @author Hevert Sousa
  */
 public class Venda {
     private int id;

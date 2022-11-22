@@ -1,9 +1,3 @@
-<%-- 
-    Document   : listar_usuario
-    Created on : 22/08/2018, 14:24:20
-    Author     : Administrador
---%>
-
 <%@page import="modelo.UsuarioDAO"%>
 <%@page import="modelo.Usuario"%>
 <%@page import="java.util.ArrayList"%>

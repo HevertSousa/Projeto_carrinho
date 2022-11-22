@@ -1,9 +1,3 @@
-<%-- 
-    Document   : listar_cliente
-    Created on : 22/08/2018, 14:24:20
-    Author     : Administrador
---%>
-
 <%@page import="modelo.ClienteDAO"%>
 <%@page import="modelo.Cliente"%>
 <%@page import="java.util.ArrayList"%>

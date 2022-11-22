@@ -1,9 +1,3 @@
-<%-- 
-    Document   : form_inserir_perfil
-    Created on : 07/08/2018, 16:25:29
-    Author     : Administrador
---%>
-
 <%@page import="modelo.PerfilDAO"%>
 <%@page import="modelo.Perfil"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -34,8 +28,8 @@ try{
         <form action="alterar_perfil.do" method="post">
             ID:<%=p.getId() %><br/>
             <input type="hidden" value="<%=p.getId() %>" name="id"/>
-            Nome:<input type="text" value="<%=p.getNome() %>" name="nome" size="60" required/><br/>
-            Descrição:<input type="text" value="<%=p.getDescricao() %>" name="descricao" size="60" required/><br/>
+            Nome        <input type="text" value="<%=p.getNome() %>" name="nome" size="60" required/><br/>
+            Descrição   <input type="text" value="<%=p.getDescricao() %>" name="descricao" size="60" required/><br/>
             <input type="submit" value="Salvar"/>
         </form>
     </body>

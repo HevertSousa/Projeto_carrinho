@@ -1,9 +1,3 @@
-<%-- 
-    Document   : menu
-    Created on : 03/10/2018, 16:41:16
-    Author     : Administrador
---%>
-
 <%@page import="modelo.Menu"%>
 <%@page import="modelo.Usuario"%>
 <img src="imagens/banner.jpg" /><br/>

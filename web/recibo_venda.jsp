@@ -1,8 +1,3 @@
-<%-- 
-    Document   : form_fecha_carrinho
-    Created on : 07/11/2018, 13:27:28
-    Author     : Administrador
---%>
 <%@page import="modelo.VendaDAO"%>
 <%@page import="modelo.ItemVenda"%>
 <%@page import="modelo.Venda"%>

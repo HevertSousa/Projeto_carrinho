@@ -1,9 +1,3 @@
-<%-- 
-    Document   : form_inserir_perfil
-    Created on : 07/08/2018, 16:25:29
-    Author     : Administrador
---%>
-
 <%@page import="modelo.Menu"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="modelo.PerfilDAO"%>

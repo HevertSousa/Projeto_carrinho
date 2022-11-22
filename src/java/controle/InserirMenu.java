@@ -16,7 +16,7 @@ import modelo.MenuDAO;
 
 /**
  *
- * @author Administrador
+ * @author Hevert Sousa
  */
 public class InserirMenu extends HttpServlet {
 

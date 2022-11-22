@@ -7,7 +7,7 @@ package modelo;
 
 /**
  *
- * @author Administrador
+ * @author Hevert Sousa
  */
 public class Cliente {
     private int id;

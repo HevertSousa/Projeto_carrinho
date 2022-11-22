@@ -16,7 +16,7 @@ import modelo.PerfilDAO;
 
 /**
  *
- * @author Administrador
+ * @author Hevert Sousa
  */
 public class InserirPerfil extends HttpServlet {
 

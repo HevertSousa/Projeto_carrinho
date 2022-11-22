@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Administrador
+ * @author Hevert Sousa
  */
 public class MenuDAO extends DataSource{
     public void inserir(Menu m) throws Exception{
